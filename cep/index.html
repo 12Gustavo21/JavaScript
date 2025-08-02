@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Endereço</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-300 font-sans">
+    <main class="bg-white w-full max-w-xl p-10 rounded-3xl shadow-xl transition-all duration-300">
+      <form class="flex flex-col gap-5">
+        <h2 class="text-3xl font-semibold text-gray-800 text-center mb-4">Endereço</h2>
+
+        <div class="flex flex-col gap-1">
+          <label for="cep" class="text-sm text-gray-600">CEP</label>
+          <input
+            type="text"
+            id="cep"
+            placeholder="12345678"
+            class="px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+          />
+          <div id="cepError" class="hidden text-sm text-red-500 mt-1">
+            O CEP informado é inválido.
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label for="street" class="text-sm text-gray-600">Rua</label>
+          <input
+            type="text"
+            id="street"
+            placeholder="Rua"
+            class="px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+          />
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label for="number" class="text-sm text-gray-600">Número</label>
+          <input
+            type="text"
+            id="number"
+            placeholder="Número"
+            class="px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+          />
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label for="neighborhood" class="text-sm text-gray-600">Bairro</label>
+          <input
+            type="text"
+            id="neighborhood"
+            placeholder="Bairro"
+            class="px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+          />
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex flex-col gap-1">
+            <label for="state" class="text-sm text-gray-600">Estado</label>
+            <input
+              type="text"
+              id="state"
+              placeholder="Estado"
+              class="px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+            />
+          </div>
+
+          <div class="flex flex-col gap-1">
+            <label for="city" class="text-sm text-gray-600">Cidade</label>
+            <input
+              type="text"
+              id="city"
+              placeholder="Cidade"
+              class="px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+            />
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
